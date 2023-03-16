@@ -1,0 +1,26 @@
+.nav-container {
+  height: 82px;
+}
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 50px;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 476px;
+  margin: auto;
+  height: 100%;
+  color: $secondary-text-color;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
+  }
+}

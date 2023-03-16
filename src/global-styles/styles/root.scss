@@ -1,8 +1,98 @@
-/// Root Styles file
-/// Here we define all the root variables we need for our project.
-/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+$corporate_color: rgba(101, 211, 110, 1);
+$primary-text_color: rgba(255, 255, 255, 1);
+$secondary-text-color: rgba(191, 191, 191, 1);
+$background_color: rgba(0, 0, 0, 1);
+$hover_color: rgba(41, 41, 41, 1);
+$active_color: rgba(68, 68, 68, 1);
+$shadow_dark:rgba(0, 0, 0, 0.7);
+$shadow_middle: rgba(0, 0, 0, 0.5);
+$shadow_light: rgba(0, 0, 0, 0.2);
 
-:root {
-    --color-primary: #5721f2;
-    --color-on-surface: #000;
+$rounding_low: 8px;
+$rounding_mean: 17px;
+$rounding_large: 50px;
+
+$desktop-width: 1440px;
+$tablet-width: 843px;
+$mobile-width: 375px;
+
+
+@mixin desktop_headline-text {
+  font-weight: 700;
+  font-size: 68px;
+  letter-spacing: -0.04em;
+}
+@mixin desktop_subheadline-text__regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.04em;
+}
+@mixin desktop_subheadline-text__bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+@mixin desktop_subheadline-text__medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+@mixin desktop_paragraph {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+@mixin tablet_headline-text {
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+}
+@mixin tablet_subheadline-text__regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+@mixin tablet_subheadline-text__medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+@mixin tablet_paragraph__regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+}
+@mixin tablet_paragraph__medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
+@mixin mobile_headline-text {
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.04em;
+}
+@mixin mobile_subheadline-text__regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+@mixin mobile_subheadline-text__medium  {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+@mixin mobile_paragraph__regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+}
+@mixin mobile_paragraph__regular {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
 }
