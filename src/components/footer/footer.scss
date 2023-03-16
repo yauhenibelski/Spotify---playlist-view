@@ -45,12 +45,15 @@ footer {
 
   .facebook {
     @include social-media_icon;
+    @include flex_center;
   }
   .twitter {
     @include social-media_icon;
+    @include flex_center;
   }
   .instagram {
     @include social-media_icon;
+    @include flex_center;
   }
 }
 .copyright {

@@ -4,10 +4,10 @@
 .nav-wrapper {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: 50px;
+  grid-template-rows: 46px;
   justify-content: space-between;
   align-content: center;
-  max-width: 476px;
+  max-width: 475px;
   margin: auto;
   height: 100%;
   color: $secondary-text-color;
@@ -20,7 +20,10 @@
     img {
       width: 20px;
       height: 20px;
-      margin: auto;
+      margin: 0px auto auto;
+    }
+    span {
+      @include desktop_paragraph;
     }
   }
 }
