@@ -7,6 +7,7 @@ $active_color: rgba(68, 68, 68, 1);
 $shadow_dark:rgba(0, 0, 0, 0.7);
 $shadow_middle: rgba(0, 0, 0, 0.5);
 $shadow_light: rgba(0, 0, 0, 0.2);
+$social-media_color: rgba(255, 255, 255, 0.3);
 
 $rounding_low: 8px;
 $rounding_mean: 17px;
@@ -16,83 +17,50 @@ $desktop-width: 1440px;
 $tablet-width: 843px;
 $mobile-width: 375px;
 
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@mixin social-media_icon {
+  width: 40px;
+  height: 40px;
+  background-color: $hover_color;
+  border-radius: $rounding_low;
+  margin-left: 12px;
+  transition: 0.2s;
+  cursor: pointer;
+  @include flex_center;
+  flex-wrap: wrap;
 
-@mixin desktop_headline-text {
-  font-weight: 700;
-  font-size: 68px;
-  letter-spacing: -0.04em;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    background-color: $social-media_color;
+  }
 }
-@mixin desktop_subheadline-text__regular {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: -0.04em;
-}
-@mixin desktop_subheadline-text__bold {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-}
-@mixin desktop_subheadline-text__medium {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-@mixin desktop_paragraph {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-}
-@mixin tablet_headline-text {
-  font-weight: 700;
-  font-size: 48px;
-  letter-spacing: -0.04em;
-}
-@mixin tablet_subheadline-text__regular {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-}
-@mixin tablet_subheadline-text__medium {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-@mixin tablet_paragraph__regular {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.04em;
-}
-@mixin tablet_paragraph__medium {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.02em;
-}
-@mixin mobile_headline-text {
-  font-weight: 700;
-  font-size: 48px;
-  letter-spacing: -0.04em;
-}
-@mixin mobile_subheadline-text__regular {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-}
-@mixin mobile_subheadline-text__medium  {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-@mixin mobile_paragraph__regular {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.04em;
-}
-@mixin mobile_paragraph__regular {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
+@mixin footer_nav {
+    display: inline-block;
+    margin-right: 97px;
+    position: relative;
+
+    h2 {
+      @include footer_subheadline;
+      color: $primary-text_color;
+      margin-bottom: 26px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: $secondary-text-color;
+      margin-bottom: 17px;
+
+      &:hover {
+        text-underline-offset: 4px;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+      }
+    }
 }
