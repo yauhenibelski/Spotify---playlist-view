@@ -23,12 +23,6 @@ footer {
   }
   .business__footer {
     @include footer_nav;
-
-    h2 {
-      @include footer_subheadline;
-      color: $primary-text_color;
-      margin-bottom: 26px;
-    }
   }
   .society__footer {
     @include footer_nav;
@@ -36,12 +30,17 @@ footer {
   .useful-links_footer {
     @include footer_nav;
   }
+  h2 {
+    @include footer_subheadline;
+    color: $primary-text_color;
+    margin-bottom: 26px;
+  }
 }
 .social-media {
   display: flex;
   position: absolute;
   right: 0px;
-  top:0px;
+  top: 0px;
 
   .facebook {
     @include social-media_icon;

@@ -28,7 +28,7 @@ $mobile-width: 375px;
   background-color: $hover_color;
   border-radius: $rounding_low;
   margin-left: 12px;
-  transition: 0.2s;
+  transition: 0.3s;
   cursor: pointer;
   flex-wrap: wrap;
 
@@ -42,24 +42,21 @@ $mobile-width: 375px;
 }
 @mixin footer_nav {
     display: inline-block;
+    box-sizing: border-box;
     margin-right: 97px;
     position: relative;
 
-    h2 {
-      @include footer_subheadline;
-      color: $primary-text_color;
-      margin-bottom: 26px;
-    }
     a {
-      display: block;
+      display: inline-block;
       text-decoration: none;
+      transition: 0.3s;
       color: $secondary-text-color;
-      margin-bottom: 17px;
+      border-bottom: solid 1px rgba(255, 255, 255, 0);
+      margin-bottom: 16px;
 
       &:hover {
-        text-underline-offset: 4px;
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
+        color: $primary-text_color;
+        border-bottom: solid 1px $primary-text_color;
       }
     }
 }
