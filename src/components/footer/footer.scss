@@ -2,7 +2,7 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   height: 397px;
-  max-width: 1440px;
+  max-width: $desktop-width;
   margin: auto;
 }
 .footer-nav_wrapper {

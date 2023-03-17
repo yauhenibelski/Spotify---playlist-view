@@ -20,7 +20,7 @@ $mobile-width: 375px;
 @mixin flex_center {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 @mixin social-media_icon {
   width: 40px;
@@ -40,23 +40,36 @@ $mobile-width: 375px;
     background-color: $social-media_color;
   }
 }
+@mixin nav-button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $shadow_middle;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $hover_color;
+  }
+}
 @mixin footer_nav {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 97px;
+  position: relative;
+
+  a {
     display: inline-block;
-    box-sizing: border-box;
-    margin-right: 97px;
-    position: relative;
+    text-decoration: none;
+    transition: 0.2s;
+    color: $secondary-text-color;
+    border-bottom: solid 1px rgba(255, 255, 255, 0);
+    margin-bottom: 16px;
 
-    a {
-      display: inline-block;
-      text-decoration: none;
-      transition: 0.3s;
-      color: $secondary-text-color;
-      border-bottom: solid 1px rgba(255, 255, 255, 0);
-      margin-bottom: 16px;
-
-      &:hover {
-        color: $primary-text_color;
-        border-bottom: solid 1px $primary-text_color;
-      }
+    &:hover {
+      color: $primary-text_color;
+      border-bottom: solid 1px $primary-text_color;
     }
+  }
 }
