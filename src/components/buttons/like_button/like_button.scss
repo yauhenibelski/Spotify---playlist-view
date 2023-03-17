@@ -1,0 +1,30 @@
+.like-button {
+  display: block;
+  margin-left: 32px;
+
+  .like {
+    height: 32px;
+    width: 32px;
+    background-image: url(/components/buttons/like_button/heart.svg);
+    background-repeat: no-repeat;
+    background-position: 55% center;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-image: url(/components/buttons/like_button/heat-activ.svg);
+      display: none;
+    }
+  }
+  .like-input {
+    display: none;
+    &:checked + .like::after {
+      display: block;
+    }
+  }
+}

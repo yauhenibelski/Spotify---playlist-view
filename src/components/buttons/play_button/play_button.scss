@@ -1,0 +1,36 @@
+.play-button {
+  display: block;
+
+  .play {
+    width: 59px;
+    height: 59px;
+    background-image: url(/components/buttons/play_button/play.svg);
+    background-repeat: no-repeat;
+    background-position: 55% center;
+    background-color: $corporate_color;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+   &::after {
+     content: '';
+      position: absolute;
+      width: 59px;
+      height: 59px;
+      background-image: url(/components/buttons/play_button/pause.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: none;
+   }
+  }
+  .play-input {
+    display: none;
+
+    &:checked + .play::after {
+      display: block;
+    }
+    &:checked + .play {
+      background-image: none;
+    }
+  }
+}

@@ -5,5 +5,43 @@
   background-image: url(/assets/play-list_img/unnamed1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -68px;
+  background-position: center;
+  background-position: center 65%;
+
+  .play-list__header_text__wrapper {
+    margin: auto;
+    max-width: $desktop-width;
+  }
+  .play-list__header_text_container {
+    margin: 70px 0px 0px 50px;
+
+    p {
+      @include desktop_subheadline-text__regular;
+      color: $primary-text_color;
+      margin: 0px
+    }
+
+    h1 {
+      @include desktop_headline-text;
+      color: $primary-text_color;
+      margin-top: 25px;
+    }
+    .popular-songs_text {
+      @include desktop_subheadline-text__regular;
+      color: $secondary-text-color;
+      margin-top: 23px;
+    }
+  }
+}
+.play-list {
+  margin: auto;
+  max-width: $desktop-width;
+  padding: 32px 50px 25px 50px;
+}
+.buttons-block {
+  display: flex;
+  align-items: center;
+}
+.song-list {
+  margin-top: 32px;
 }

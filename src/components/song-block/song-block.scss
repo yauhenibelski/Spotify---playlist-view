@@ -1,0 +1,101 @@
+.song-container {
+  position: relative;
+  border-radius: $rounding_mean;
+  background-color: $static_color;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $hover_color;
+  }
+}
+.song-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 89px;
+  margin-top: 16px;
+  border-radius: $rounding_mean;
+  cursor: pointer;
+
+  .song-number{
+    @include desktop_subheadline-text__regular;
+    color: $secondary-text-color;
+    width: 20px;
+    margin-left: 3.7%;
+    margin-right: 2%;
+    flex-basis: 2%;
+  }
+  .cover__name-of-the-song__block {
+    display: flex;
+    align-items: center;
+    flex-basis: 34.5%;
+
+    .name-of-the-song {
+      margin-left: 32px;
+      height: 40px;
+
+      img {
+        height: 56px;
+        width: 56px;
+        border-radius: $rounding_low;
+      }
+      p {
+        @include desktop_paragraph;
+        margin: 2px 0px 0px 0px;
+        color: $secondary-text-color;
+      }
+      h3 {
+        @include desktop_subheadline-text__medium;
+        margin: 6px 0px 0px 0px;
+        color: $primary-text_color;
+      }
+    }
+  }
+  .artists {
+    flex-basis: 31%;
+    p {
+      @include desktop_paragraph;
+      margin: 2px 0px 0px 0px;
+      color: $secondary-text-color;
+    }
+    h3 {
+      @include desktop_subheadline-text__medium;
+      margin: 6px 0px 0px 0px;
+      color: $primary-text_color;
+    }
+  }
+  .song-time {
+    flex-basis: 12%;
+    p {
+      @include desktop_paragraph;
+      margin: 2px 0px 0px 0px;
+      color: $secondary-text-color;
+    }
+    h3 {
+      @include desktop_subheadline-text__medium;
+      margin: 6px 0px 0px 0px;
+      color: $primary-text_color;
+    }
+  }
+}
+.song-menu {
+  position: absolute;
+  right: 55px;
+  top: 27px;
+  width: 78px;
+  height: 35px;
+  cursor: pointer;
+}
+.song-input {
+  display: none;
+
+  &:checked + .song-wrapper {
+    background-color: $active_color;
+  }
+  &:checked + .song-wrapper .song-number {
+    font-size: 0;
+    background-image: url(/components/song-block/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

@@ -3,6 +3,7 @@ $primary-text_color: rgba(255, 255, 255, 1);
 $secondary-text-color: rgba(191, 191, 191, 1);
 $background_color: rgba(0, 0, 0, 1);
 $hover_color: rgba(41, 41, 41, 1);
+$static_color: #18181C;
 $active_color: rgba(68, 68, 68, 1);
 $shadow_dark:rgba(0, 0, 0, 0.7);
 $shadow_middle: rgba(0, 0, 0, 0.5);
@@ -46,8 +47,8 @@ $mobile-width: 375px;
   border-radius: 50%;
   background-color: $shadow_middle;
   border: none;
-  cursor: pointer;
   transition: 0.2s;
+  cursor: no-drop;
 
   &:hover {
     background-color: $hover_color;
