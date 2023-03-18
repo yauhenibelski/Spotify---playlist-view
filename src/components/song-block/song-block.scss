@@ -7,6 +7,9 @@
   &:hover {
     background-color: $hover_color;
   }
+  &:hover .song-menu {
+    opacity: 1;
+  }
 }
 .song-wrapper {
   display: flex;
@@ -30,15 +33,16 @@
     align-items: center;
     flex-basis: 34.5%;
 
+    img {
+      height: 56px;
+      width: 56px;
+      border-radius: $rounding_low;
+    }
+
     .name-of-the-song {
       margin-left: 32px;
       height: 40px;
 
-      img {
-        height: 56px;
-        width: 56px;
-        border-radius: $rounding_low;
-      }
       p {
         @include desktop_paragraph;
         margin: 2px 0px 0px 0px;
@@ -79,12 +83,39 @@
   }
 }
 .song-menu {
+  @include flex_center;
   position: absolute;
   right: 55px;
   top: 27px;
   width: 78px;
   height: 35px;
   cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+
+  .like-button {
+    margin: 0px;
+  }
+  .like {
+    background-size: 79%;
+    height: 30px;
+    width: 30px;
+
+    &::after {
+      height: 30px;
+      width: 30px;
+      background-size: 79%;
+      background-repeat: no-repeat;
+      top: 6px;
+      left: 4px;
+    }
+  }
+  .menu-button {
+    margin-left: 22px;
+    height: 35px;
+    background-size: cover;
+    width: 24px;
+  }
 }
 .song-input {
   display: none;
@@ -97,5 +128,8 @@
     background-image: url(/components/song-block/Vector.svg);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  &:checked ~ .song-menu {
+    opacity: 1;
   }
 }

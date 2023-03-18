@@ -30,3 +30,7 @@ export function createElement(elem: AddElem): HTMLElement | void {
   }
   elem.putIn.elem.insertAdjacentElement(elem.putIn.position, newElem);
 }
+
+export function getZeroBeforeDigit(params:number): string {
+  return params < 10 ? `0${params}` : `${params}`;
+}

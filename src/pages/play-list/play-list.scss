@@ -9,11 +9,12 @@
   background-position: center 65%;
 
   .play-list__header_text__wrapper {
-    margin: auto;
     max-width: $desktop-width;
+    padding-top: 155px;
+    margin: auto;
   }
   .play-list__header_text_container {
-    margin: 70px 0px 0px 50px;
+    margin: auto auto auto 50px;
 
     p {
       @include desktop_subheadline-text__regular;
