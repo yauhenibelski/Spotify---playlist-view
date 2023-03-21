@@ -1,5 +1,8 @@
 .menu-container {
   height: 82px;
+  position: sticky;
+  bottom: 0px;
+  background-color: $background_color;
 }
 .menu-wrapper {
   display: grid;
@@ -27,3 +30,9 @@
     }
   }
 }
+.library {
+  span {
+    color: $primary-text_color;
+  }
+}
+@import "./menu_mobile.scss";

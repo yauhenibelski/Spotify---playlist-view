@@ -1,0 +1,17 @@
+@media (max-width: $tablet-width) {
+  .like-button {
+    margin-left: 29px;
+
+    .like {
+      background-size: cover;
+      height: 27px;
+      width: 27px;
+
+      &::after {
+        height: 27px;
+        width: 27px;
+        background-size: cover;
+      }
+    }
+  }
+}

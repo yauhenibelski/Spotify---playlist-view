@@ -30,8 +30,8 @@ $mobile-width: 375px;
   border-radius: $rounding_low;
   margin-left: 12px;
   transition: 0.3s;
-  cursor: pointer;
   flex-wrap: wrap;
+  cursor: no-drop;
 
   img {
     width: 20px;
@@ -67,6 +67,7 @@ $mobile-width: 375px;
     color: $secondary-text-color;
     border-bottom: solid 1px rgba(255, 255, 255, 0);
     margin-bottom: 16px;
+    cursor: no-drop;
 
     &:hover {
       color: $primary-text_color;

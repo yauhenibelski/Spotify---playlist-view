@@ -2,7 +2,7 @@ import { createElement } from '../../../global-scripts/scripts/helpers';
 
 export function menuButton(): HTMLElement {
   const menuWrapper = createElement({
-    elem: 'button',
+    elem: 'div',
     class: 'menu-button',
   }) as HTMLElement;
 

@@ -1,0 +1,10 @@
+@media (max-width: $mobile-width) {
+  .play-list__page {
+    height: 433px;
+    background-position: 79% 65%;
+
+    .play-list__header_text__wrapper {
+      padding-top: 234px;
+    }
+  }
+}

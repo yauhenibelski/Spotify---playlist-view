@@ -42,7 +42,14 @@
 .buttons-block {
   display: flex;
   align-items: center;
+
+  .menu-button {
+    cursor: no-drop;
+  }
 }
 .song-list {
   margin-top: 32px;
 }
+
+@import "./play-list_tablet.scss";
+@import "./play-list_mobile.scss";

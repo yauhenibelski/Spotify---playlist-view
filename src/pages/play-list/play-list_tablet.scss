@@ -1,0 +1,28 @@
+@media (max-width: $tablet-width) {
+  .play-list__page {
+    height: 425px;
+    background-position: 47% 65%;
+
+    .play-list__header_text__wrapper {
+      padding-top: 227px;
+    }
+    .play-list__header_text_container {
+      margin-left: 32px;
+
+      p {
+        @include tablet_paragraph__regular;
+      }
+      h1 {
+        @include tablet_headline-text;
+        margin-top: 17px;
+      }
+      .popular-songs_text {
+        @include tablet_paragraph__regular;
+        margin-top: 16px;
+      }
+    }
+  }
+  .play-list {
+    padding: 22px 15px 25px 15px;
+  }
+}
