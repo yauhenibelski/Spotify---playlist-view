@@ -1,0 +1,74 @@
+.menu-playlist {
+  position: absolute;
+  background-color: $hover_color;
+  padding: 16px 16px 16px 16px;
+  border-radius: $rounding_low;
+  width: 248px;
+  z-index: 3;
+  top: 50px;
+  left: -170px;
+  box-shadow: 0px -10px 29px -21px rgba(119, 119, 119, 1);
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 45px;
+    width: 50px;
+    top: -44px;
+    right: 0px;
+  }
+
+  .text-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    border-radius: $rounding_low;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $active_color;
+    }
+  }
+  .add-to-queue__text {
+    p {
+      height: 50px;
+    }
+  }
+  .go-to__text__container {
+    p {
+      height: 38px;
+    }
+  }
+  .add-playlist__text__container {
+    p {
+      height: 40px;
+    }
+  }
+  .share-text {
+    height: 52px
+  }
+  p {
+    @include menu-playlist;
+    display: flex;
+    align-items: center;
+    color: $primary-text_color;
+    margin: 0px;
+  }
+  .line {
+    background-color: $active_color;
+    height: 1px;
+    margin: 0px 16px 0px 16px;
+  }
+  .show-list {
+    &::after {
+      content: '';
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      background-image: url(/components/menu-playlist/right-arrow-5\ 2.svg);
+      right: 15px;
+      top: 37%;
+    }
+  }
+}

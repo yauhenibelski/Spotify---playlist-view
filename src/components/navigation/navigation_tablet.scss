@@ -1,0 +1,12 @@
+@media (max-width: $tablet-width) {
+  .user {
+    display: none;
+  }
+  .nav-buttons {
+    margin-left: 16px;
+
+    .nav-r__button{
+     display: none;
+    }
+  }
+}

@@ -6,6 +6,7 @@
 
   &:hover {
     background-color: $hover_color;
+    z-index: 3;
   }
   &:hover .song-menu {
     opacity: 1;
@@ -133,3 +134,5 @@
     opacity: 1;
   }
 }
+@import "./song-block_tablet.scss";
+@import "./song-block_mobile.scss";

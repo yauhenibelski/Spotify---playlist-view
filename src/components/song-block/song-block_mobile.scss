@@ -1,0 +1,23 @@
+@media (max-width: 460px) {
+  .song-wrapper {
+    .song-number {
+      margin-left: 7%;
+      margin-right: 8%;
+    }
+    .artists {
+      display: none;
+    }
+    .cover__name-of-the-song__block {
+      flex-basis: auto;
+    }
+  }
+  .song-input {
+    &:checked + .song-wrapper .song-number {
+      font-size: 0;
+      background-image: url(/components/song-block/Vector.svg);
+      background-repeat: no-repeat;
+      transform: scale(2);
+      background-position-y: center;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@media (max-width: $tablet-width) {
+  .song-list {
+    margin-top: 23px;
+  }
+  .song-wrapper {
+    .song-number {
+      margin-right: 3.2%;
+      margin-left: 3%;
+    }
+    .cover__name-of-the-song__block {
+      flex-basis: 39.5%;
+
+      .name-of-the-song {
+      margin-left: 25px;
+      height: 40px;
+      }
+    }
+    .song-time {
+      display: none;
+    }
+  }
+  .song-menu {
+    opacity: 1;
+    right: 15px;
+
+    .like-button {
+      display: none;
+    }
+  }
+}
